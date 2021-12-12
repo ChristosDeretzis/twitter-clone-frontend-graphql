@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Button, Container, CssBaseline, Grid, Link, TextField, Typography, Alert } from "@mui/material";
+import { Button, Container, CssBaseline, Grid, Link, TextField, Typography, Alert, Avatar } from "@mui/material";
 import { Formik } from "formik";
 import { useMutation } from '@apollo/client';
 import { makeStyles } from '@mui/styles';
 import { SignUpSchema } from '../../utils/validationSchemas';
 import { SIGNUP } from '../../queries/Auth/auth';
 import { IS_LOGGED_IN } from '../../queries/User';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 
 const SignupStyles = makeStyles({
     paper: {
@@ -22,7 +24,8 @@ const SignupStyles = makeStyles({
         marginTop: 30
     },
     submit: {
-        margin: '20px 0'
+        margin: '20px 0',
+        color: "#1d9bf0"
     },
     link: {
         marginBottom: '10px'
@@ -89,6 +92,9 @@ const SignUp = (props) => {
                     <Container component="main" maxWidth="xs">
                         <CssBaseline />
                         <div className={styles.paper}>
+                            <Avatar sx={{ m: 1, bgcolor: '#1d9bf0' }}>
+                                <TwitterIcon />
+                            </Avatar>
                             <Typography component="h1" variant="h5" className="text">
                                 Sign Up
                             </Typography>
@@ -179,9 +185,7 @@ const SignUp = (props) => {
                                     <Button
                                         type="submit"
                                         fullWidth
-                                        variant="contained"
-                                        color="primary"
-                                        classes={styles.submit}>
+                                        variant="contained">
                                     Sign Up
                                     </Button>
                                 </div>

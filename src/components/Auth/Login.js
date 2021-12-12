@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Button, Container, CssBaseline, Link, TextField, Typography, Alert } from "@mui/material";
+import { Button, Container, CssBaseline, Link, TextField, Typography, Alert, Avatar } from "@mui/material";
 import { makeStyles } from '@mui/styles';
 import { Formik } from "formik";
 import { useMutation } from '@apollo/client';
 import { LOGIN } from '../../queries/Auth/auth';
 import { IS_LOGGED_IN } from '../../queries/User';
 import { LoginSchema } from '../../utils/validationSchemas';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const loginStyles = makeStyles({
     paper: {
@@ -22,7 +23,8 @@ const loginStyles = makeStyles({
         marginTop: 30
     },
     submit: {
-        margin: '20px 0'
+        margin: '20px 0',
+        color: "#1d9bf0"
     },
     link: {
         marginBottom: '10px'
@@ -78,6 +80,9 @@ const Login = (props) => {
                         <Container component="main" maxWidth="xs">
                             <CssBaseline />
                             <div className={styles.paper}>
+                                <Avatar sx={{ m: 1, bgcolor: '#1d9bf0' }}>
+                                    <TwitterIcon />
+                                </Avatar>
                                 <Typography component="h1" variant="h5" className="text" align="center">
                                     Sign In
                                 </Typography>
@@ -112,9 +117,7 @@ const Login = (props) => {
                                         <Button
                                             type="submit"
                                             fullWidth
-                                            variant="contained"
-                                            color="primary"
-                                            classes={styles.submit}>
+                                            variant="contained">
                                         Sign In
                                         </Button>
                                     </div>
