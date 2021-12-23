@@ -1,12 +1,14 @@
 import React from "react";
+import Sidebar from "./components/SideBar/Sidebar";
 
 const Router = () => {
     const user = JSON.parse(localStorage.getItem("user"));
     console.log(user);
 
     return (
-      <h1>Welcome {user.fullname}</h1>
-      
+      <div>
+        <Sidebar />
+      </div>
     );
   };
   
