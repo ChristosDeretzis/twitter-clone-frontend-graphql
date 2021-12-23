@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./components/SideBar/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const Router = () => {
     const user = JSON.parse(localStorage.getItem("user"));

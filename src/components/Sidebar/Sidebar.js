@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -23,6 +23,9 @@ const Sidebar = () => {
     const location = useLocation();
     const { pathname } = location;
     const splitLocation = pathname.split("/");
+
+    const user = JSON.parse(localStorage.getItem("user"));
+    console.log(user);
 
     return (
         <div className={styles.root}>
@@ -76,10 +79,10 @@ const Sidebar = () => {
                         <span>Bookmarks</span>
                     </NavLink>
                 </li>
-                <li className = {splitLocation[1] === "user" ? styles.selected : ""}>
-                    <NavLink to="/user">
+                <li className = {splitLocation[1] === user.userName ? styles.selected : ""}>
+                    <NavLink to={`/${user.userName}`}>
                         {   
-                            splitLocation[1] === "user" ? 
+                            splitLocation[1] === user.userName ? 
                                 <PersonIcon /> 
                             : 
                                 <PermIdentityIcon />
