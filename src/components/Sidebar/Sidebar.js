@@ -12,8 +12,9 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import PersonIcon from '@mui/icons-material/Person';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-import sidebarStyles from './SidebarStyles';
 
+import sidebarStyles from './SidebarStyles';
+import MorePopup from './MorePopup';
 
 
 const Sidebar = () => {
@@ -26,6 +27,8 @@ const Sidebar = () => {
 
     const user = JSON.parse(localStorage.getItem("user"));
     console.log(user);
+
+    
 
     return (
         <div className={styles.root}>
@@ -89,6 +92,9 @@ const Sidebar = () => {
                         } 
                         <span>Profile</span>
                     </NavLink>
+                </li>
+                <li>
+                    <MorePopup />
                 </li>
             </ul>
         </div>

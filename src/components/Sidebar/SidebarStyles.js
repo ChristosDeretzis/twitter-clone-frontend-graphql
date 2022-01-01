@@ -36,6 +36,7 @@ const sidebarStyles = makeStyles({
             display: 'block',
             padding: '5px 20px 8px 10px',
             width: 'max-content',
+            cursor: 'pointer',
 
             '& a': {
                 textDecoration: 'none',
