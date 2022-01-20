@@ -7,9 +7,7 @@ import App from './App';
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <App />
   </ApolloProvider>,
   document.getElementById('root')
 );

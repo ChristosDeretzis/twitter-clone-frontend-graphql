@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from '@mui/material';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import UserLogout from '../Auth/Logout';
+import UserLogout from '../../containers/Auth/Logout';
 
 const MorePopup = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);

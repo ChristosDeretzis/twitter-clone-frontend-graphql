@@ -1,0 +1,21 @@
+.new-tweet {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+}
+
+.new-tweet-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 100%;
+    background: inherit;
+    border: none;
+    font-size: 1.24rem;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin-bottom: 1.4rem;
+}

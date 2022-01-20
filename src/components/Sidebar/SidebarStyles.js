@@ -7,8 +7,11 @@ const sidebarStyles = makeStyles({
         position: 'fixed',
         fontWeight: '400',
         fontSize: '22px',
-        fontFamily: 'Helvetica Neue',
-        lineHeight: '120%',
+        fontFamily: 'Poppins',
+        lineHeight: 1.8,
+        width: "30%",
+        marginTop: "-30px",
+        marginLeft: "200px",
 
         '& ul': {
             listStyle: 'none',

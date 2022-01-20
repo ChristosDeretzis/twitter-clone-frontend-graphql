@@ -1,0 +1,8 @@
+.TweetFile {
+    max-width: 300px;
+    max-height: 285px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
