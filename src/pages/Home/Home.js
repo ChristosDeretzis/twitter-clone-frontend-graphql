@@ -1,4 +1,5 @@
 import React from "react";
+import FeedList from "../../containers/FeedList/FeedList";
 import NewTweet from "../../containers/Tweet/NewTweet/NewTweet";
 import "./Home.css";
 
@@ -9,6 +10,7 @@ const Home = () => {
                 <span>Home</span>
             </div>
             <NewTweet />
+            <FeedList />
         </div>
     )
 };

@@ -1,0 +1,40 @@
+.tweet-wrapper {
+    display: flex;
+    border: 1px solid #eff3f4;
+    padding: 1rem;
+    width: 600px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tweet-info-user span.username  {  
+    font-weight: 550;
+}
+
+.tweet-info-user span.secondary {
+    padding-left: 0.5rem;
+    color: #536471;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+}
+
+.text p{
+    color: black;
+    margin-top: 0.2rem;
+}
+
+.text a {
+    text-decoration: none;
+}
+
+.tags {
+    margin-top: 0.2rem;
+}
+
+span.tag {
+    color: #4f9cf0
+}

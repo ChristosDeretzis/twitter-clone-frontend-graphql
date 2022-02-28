@@ -1,0 +1,10 @@
+.wrapper {
+    height: 70vh;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+}
