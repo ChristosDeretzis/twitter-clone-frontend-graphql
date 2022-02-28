@@ -16,3 +16,23 @@ export const NEW_TWEET = gql`
         }
     }
   `;
+
+export const LIKE_TWEET = gql`
+    mutation Mutation($toggleLikeId: ID!) {
+        toggleLike(id: $toggleLikeId)
+    }
+`;
+
+export const RETWEET_TWEET = gql`
+    mutation Mutation($toggleRetweetId: ID!) {
+        toggleRetweet(id: $toggleRetweetId)
+    }
+`;
+
+export const DELETE_TWEET = gql`
+    mutation Mutation($deleteTweetId: ID!) {
+        deleteTweet(id: $deleteTweetId) {
+            id
+        }
+    }
+`;

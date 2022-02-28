@@ -38,3 +38,27 @@
 span.tag {
     color: #4f9cf0
 }
+
+.tweet-stats {
+    display: flex;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.tweet-stats .comment {
+    position: relative;
+    top: 4px;
+}
+
+.tweet-stats div {
+    margin-right: 4rem;
+}
+
+.tweet-stats svg {
+    margin-right: 0.5rem;
+}
+
+.tweet-stats span {
+    display: flex;
+    align-items: center;
+}

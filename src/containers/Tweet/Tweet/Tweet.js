@@ -3,7 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Avatar from '../../../components/Avatar/Avatar';
 import TweetFile from '../../../components/TweetFile/TweetFile';
+import LikeTweet from './LikeTweet';
+import Retweet from './Retweet';
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import "./Tweet.css";
+import DeleteTweet from './DeleteTweet';
 
 const Tweet = (props) => {
     const {
@@ -58,10 +62,36 @@ const Tweet = (props) => {
                 
 
                 <Link to={`/${username}/status/${id}`}>
-                {files && files.length && files[0] ? (
-                        <TweetFile src={files[0].url} alt="tweet-file" />
-                ) : null}
+                    {files && files.length && files[0] ? (
+                            <TweetFile src={files[0].url} alt="tweet-file" />
+                    ) : null}
                 </Link>
+
+                <div className="tweet-stats">
+                    <div className="comment">
+                        <Link to={`/${username}/status/${id}`}>
+                            <ChatBubbleOutlineIcon style={{color: '#000'}}/>
+                            {commentsCount ? commentsCount : null}
+                        </Link>
+                    </div>
+                    <div>
+                        <Retweet
+                            id={id}
+                            isRetweet={isRetweet}
+                            retweetsCount={retweetsCount}
+                        />
+                    </div>
+                    <div>
+                        <LikeTweet
+                            id={id}
+                            isLiked={isLiked}
+                            likesCount={likesCount}
+                        />
+                    </div>
+                    <div>
+                        {isTweetMine ? <DeleteTweet id={id} /> : null}
+                    </div>
+                </div>
             </div>
         </div>
     )
