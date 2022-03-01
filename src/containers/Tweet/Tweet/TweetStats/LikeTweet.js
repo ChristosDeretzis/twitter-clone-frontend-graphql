@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { useMutation } from '@apollo/client';
-import { LIKE_TWEET } from '../../../queries/Tweet';
+import { LIKE_TWEET } from '../../../../queries/Tweet';
 
 const LikeTweet = ({id, isLiked, likesCount}) => {
     const [liked, setLiked] = useState(isLiked);

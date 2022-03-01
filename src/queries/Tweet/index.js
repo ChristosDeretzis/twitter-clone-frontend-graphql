@@ -36,3 +36,44 @@ export const DELETE_TWEET = gql`
         }
     }
 `;
+
+export const TWEET = gql`
+    query Query($tweetId: ID!) {
+        tweet(id: $tweetId) {
+            id
+            text
+            tags {
+                id
+                text
+            }
+            user {
+                id
+                fullname
+                avatar
+                userName
+            }
+            files {
+                id
+                url
+            }
+            likesCount
+            commentsCount
+            retweetsCount
+            isLiked
+            isRetweet
+            comments {
+                id
+                text
+                isCommentMine
+                user {
+                    id
+                    fullname
+                    userName
+                    avatar
+                }
+                createdAt
+            }
+            createdAt
+        }
+    }
+`;

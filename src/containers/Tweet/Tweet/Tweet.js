@@ -3,11 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Avatar from '../../../components/Avatar/Avatar';
 import TweetFile from '../../../components/TweetFile/TweetFile';
-import LikeTweet from './LikeTweet';
-import Retweet from './Retweet';
+import LikeTweet from './TweetStats/LikeTweet';
+import Retweet from './TweetStats/Retweet';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import "./Tweet.css";
-import DeleteTweet from './DeleteTweet';
+import DeleteTweet from './TweetStats/DeleteTweet';
 
 const Tweet = (props) => {
     const {

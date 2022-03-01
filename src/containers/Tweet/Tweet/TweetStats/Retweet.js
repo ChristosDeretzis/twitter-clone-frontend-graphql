@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import RepeatIcon from '@mui/icons-material/Repeat';
 import { useMutation } from '@apollo/client';
-import { RETWEET_TWEET } from '../../../queries/Tweet';
+import { RETWEET_TWEET } from '../../../../queries/Tweet';
 
 const Retweet = ({ id, isRetweet, retweetsCount }) => {
     const [retweet, setRetweet] = useState(isRetweet);

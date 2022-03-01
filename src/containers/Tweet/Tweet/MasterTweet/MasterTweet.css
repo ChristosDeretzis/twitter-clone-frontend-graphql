@@ -1,0 +1,4 @@
+.master-tweet-wrapper {
+    display: flex;
+    flex-direction: column;
+}

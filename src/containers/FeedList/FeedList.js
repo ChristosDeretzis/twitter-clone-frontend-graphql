@@ -26,10 +26,10 @@ const FeedList = (props) => {
     }
     console.log(data.feed);
     return (
-        <div className="wrapper2">
+        <div>
             {data.feed.length ? 
                 (data.feed.map(tweet => <Tweet key={tweet.id} tweet={tweet} />))
-            : (<h1>Hello</h1>)}
+            : (<CustomResponse text="Follow some people to get tweets" />)}
         </div>
     )
     
