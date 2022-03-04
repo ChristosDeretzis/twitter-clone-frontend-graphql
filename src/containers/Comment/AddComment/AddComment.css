@@ -1,15 +1,19 @@
-.new-tweet {
+.add-comment-wrapper {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    border: 1px solid rgb(126, 126, 118);
+    border: 1px solid ;
     padding: 1rem;
 }
 
-.new-tweet-action {
+.add-comment {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.add-comment-action {
+    display: flex;
+    align-items: center;
 }
 
 .textarea {

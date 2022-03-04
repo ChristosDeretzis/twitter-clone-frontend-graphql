@@ -68,11 +68,13 @@ const Tweet = (props) => {
                 </Link>
 
                 <div className="tweet-stats">
-                    <div className="comment">
-                        <Link to={`/${username}/status/${id}`}>
-                            <ChatBubbleOutlineIcon style={{color: '#000'}}/>
-                            {commentsCount ? commentsCount : null}
-                        </Link>
+                    <div>
+                        <span className="comment">
+                            <Link to={`/${username}/status/${id}`}>
+                                <ChatBubbleOutlineIcon style={{color: '#000'}}/>
+                                {commentsCount ? commentsCount : null}
+                            </Link>
+                        </span>
                     </div>
                     <div>
                         <Retweet

@@ -1,0 +1,39 @@
+.comment-wrapper {
+    display: flex;
+    border: 1px solid #eff3f4;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comment-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-info-user span.username  {  
+    font-weight: 550;
+}
+
+.comment-info-user span.secondary {
+    padding-left: 0.5rem;
+    color: #536471;
+}
+
+.comment-info-user svg {
+    position: relative;
+    top: 6px;
+    margin-left: 0.6rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+}
+
+.text p {
+    color: black;
+    margin-top: 0.2rem;
+}

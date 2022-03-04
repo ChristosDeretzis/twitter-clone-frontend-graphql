@@ -82,7 +82,7 @@ const Sidebar = () => {
                         <span>Bookmarks</span>
                     </NavLink>
                 </li>
-                <li className = {splitLocation[1] === user.userName ? styles.selected : ""}>
+                <li className = {(splitLocation[1] === user.userName && splitLocation.length === 2) ? styles.selected : ""}>
                     <NavLink to={`/${user.userName}`}>
                         {   
                             splitLocation[1] === user.userName ? 

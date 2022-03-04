@@ -6,6 +6,7 @@
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 .tweet-info-user span.username  {  
@@ -45,9 +46,13 @@ span.tag {
     align-items: center;
 }
 
-.tweet-stats .comment {
+.tweet-stats .comment svg{
     position: relative;
     top: 4px;
+}
+
+.tweet-stats .comment a {
+    text-decoration: none;
 }
 
 .tweet-stats div {
@@ -61,4 +66,5 @@ span.tag {
 .tweet-stats span {
     display: flex;
     align-items: center;
+    text-decoration: none !important;
 }

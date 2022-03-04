@@ -66,9 +66,10 @@ const NewTweet = (props) => {
                 <div className="new-tweet-main">
                     <TextareaAutosize 
                         cols="48"
-                        maxRows="2"
+                        maxRows="3"
                         placeholder="What's happening?"
                         type="text"
+                        className="textarea"
                         value={tweet}
                         onChange={handleTweet} />
 

@@ -4,6 +4,8 @@ import { useParams } from 'react-router';
 import CustomResponse from '../../../../components/CustomResponse/CustomResponse';
 import Loader from '../../../../components/Loader/Loader';
 import { TWEET } from '../../../../queries/Tweet';
+import AddComment from '../../../Comment/AddComment/AddComment';
+import Comment from '../../../Comment/Comment';
 import Tweet from '../Tweet';
 import "./MasterTweet.css";
 
@@ -28,6 +30,14 @@ const MasterTweet = () => {
               ) : (
                   <CustomResponse text="The tweet you are looking for does not exist" />
               )}  
+              {data && data.tweet && data.tweet.id ? (
+                  <AddComment id={data.tweet.id} />
+              ) : null}
+              {data && data.tweet && data.tweet.comments ? (
+                  data.tweet.comments.map((comment) => (
+                      <Comment comment={comment} />
+                  ))
+              ) : null}
             </>)}
       </div>  
     );
