@@ -1,0 +1,24 @@
+.profile-wrapper {
+    margin-bottom: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile-header {
+    padding: 0.6rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-top {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.tweets-count {
+    margin-top: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #c7ccd1;
+}

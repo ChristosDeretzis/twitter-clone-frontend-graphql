@@ -7,3 +7,14 @@
     margin-left: 1rem;
 }
 
+.profile-Avatar {
+    margin-top: -4rem;
+    background-color: beige;
+    height: 60px;
+    width: 60px;
+    margin-left: 1.4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+

@@ -2,14 +2,13 @@ import { makeStyles } from '@mui/styles';
 
 const sidebarStyles = makeStyles({
     root: {
-        maxWidth: 250,
         height: '100vh',
         position: 'fixed',
         fontWeight: '400',
         fontSize: '22px',
         fontFamily: 'Poppins',
         lineHeight: 1.8,
-        width: "30%",
+        width: "14.6%",
         marginTop: "-30px",
         marginLeft: "200px",
 

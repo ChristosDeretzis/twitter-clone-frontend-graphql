@@ -29,3 +29,16 @@ export const FEED = gql`
         }
     }
 `;
+
+export const USERS = gql`
+    query Query {
+        users {
+            id
+            userName
+            isSelf
+            isFollowing
+            avatar
+            fullname
+        }
+    }
+`;
