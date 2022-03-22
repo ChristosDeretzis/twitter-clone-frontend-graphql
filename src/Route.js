@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
+import EditProfile from "./containers/Profile/EditProfile/EditProfile";
 import Profile from "./containers/Profile/Profile";
 import MasterTweet from "./containers/Tweet/Tweet/MasterTweet/MasterTweet";
 import Home from "./pages/Home/Home";
@@ -18,6 +19,7 @@ const Router = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path={`/:handle/status/:tweetId`} element={<MasterTweet />} />
             <Route exact path={'/:handle'} element={<Profile />}/>
+            <Route exact path={"/settings/profile"} element={<EditProfile />} />
           </Routes>
         </div>
       </BrowserRouter>

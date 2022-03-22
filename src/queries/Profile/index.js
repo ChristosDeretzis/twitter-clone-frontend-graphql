@@ -49,3 +49,27 @@ export const PROFILE = gql`
         }
     }
 `;
+
+export const EDIT_PROFILE = gql`
+    mutation Mutation(
+        $firstName: String, 
+        $lastName: String, 
+        $coverPhoto: String, 
+        $avatar: String, 
+        $bio: String, 
+        $location: String, 
+        $website: String, 
+        $dob: String) {
+        editProfile(
+            firstName: $firstName, 
+            lastName: $lastName, 
+            coverPhoto: $coverPhoto, 
+            avatar: $avatar, 
+            bio: $bio, 
+            location: $location, 
+            website: $website, 
+            dob: $dob) {
+                id
+        }
+}
+`;

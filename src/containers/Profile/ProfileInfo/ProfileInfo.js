@@ -9,6 +9,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkIcon from '@mui/icons-material/Link';
 import { CalendarViewMonth } from "@mui/icons-material";
 import Follow from "../Follow/Follow";
+import { NavLink } from "react-router-dom";
 
 const ProfileInfo = ({ profile }) => {
     if(!profile) {
@@ -44,7 +45,9 @@ const ProfileInfo = ({ profile }) => {
                 </div>
 
                 {isSelf ? (
-                    <Button className="action-btn" label="Edit Profile" />
+                    <NavLink to="/settings/profile">
+                        <Button className="action-btn" label="Edit Profile" />
+                    </NavLink>
                 ) : (
                     <Follow
                         isFollowing={true}
