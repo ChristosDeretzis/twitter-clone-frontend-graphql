@@ -26,6 +26,7 @@ const ProfileInfo = ({ profile }) => {
         location,
         website,
         isSelf,
+        isFollowing,
         dob,
         followersCount,
         followingCount,
@@ -50,7 +51,7 @@ const ProfileInfo = ({ profile }) => {
                     </NavLink>
                 ) : (
                     <Follow
-                        isFollowing={true}
+                        isFollowing={isFollowing}
                         id={id} />
                 )}
             </div>

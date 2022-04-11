@@ -1,0 +1,16 @@
+.search-wrapper {
+    margin: 1rem 0;
+    margin-left: 1rem;
+}
+
+input {
+    height: 40px;
+    width: 70%;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: #F5F8FA;
+    background: #F5F8FA;
+    color: #657786;
+    padding-left: 1.2rem;
+}

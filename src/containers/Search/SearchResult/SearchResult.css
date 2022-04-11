@@ -1,0 +1,16 @@
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #CCD6DD;
+}
+
+span {
+    cursor: pointer;
+    margin-bottom: 0.4rem;
+}
+
+.span-active {
+    border-bottom: 2px solid #CA2055;
+    font-weight: 500;
+    color: #CA2055;
+}

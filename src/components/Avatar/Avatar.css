@@ -18,3 +18,15 @@
     margin-right: 1rem;
 }
 
+.profile-Avatar-search {
+    margin-left: 1rem;
+    margin-bottom: -40px;
+    background-color: beige;
+    height: 60px;
+    width: 60px;
+    margin-left: 1.4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+

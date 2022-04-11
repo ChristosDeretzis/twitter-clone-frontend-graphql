@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import EditProfile from "./containers/Profile/EditProfile/EditProfile";
 import Profile from "./containers/Profile/Profile";
 import MasterTweet from "./containers/Tweet/Tweet/MasterTweet/MasterTweet";
+import Explore from "./pages/Explore/Explore";
 import Home from "./pages/Home/Home";
 import "./Route.css";
 
@@ -17,6 +18,7 @@ const Router = () => {
         <div className="Layout">
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/explore" element={<Explore />} />
             <Route exact path={`/:handle/status/:tweetId`} element={<MasterTweet />} />
             <Route exact path={'/:handle'} element={<Profile />}/>
             <Route exact path={"/settings/profile"} element={<EditProfile />} />

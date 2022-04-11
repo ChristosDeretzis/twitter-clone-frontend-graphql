@@ -90,7 +90,7 @@ const EditProfile = (props) => {
               },
             });
       
-            alert("Your profile has been updated 🥳");
+            alert("Your profile has been updated");
           } catch (err) {
             console.log(err.message);
           }

@@ -12,7 +12,7 @@ const App = () => {
   } = useQuery(IS_LOGGED_IN);
 
   return(
-    <div>
+    <div className="App">
       <ToastContainer
         position="top-right"
         autoClose={5000}
