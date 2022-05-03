@@ -36,3 +36,19 @@ You can find the backend repo here: https://github.com/ChristosDeretzis/twitter-
     CLOUDINARY_URL=<URL_FOR_CLOUDINARY_API>
     ```
 4. After that run `npm run start` to launch the application
+
+## UI
+
+### Home
+![Home](https://user-images.githubusercontent.com/33032158/166555268-b088d92b-a9b2-4629-b18b-dc207e31901c.JPG)
+
+### Tweet Details
+![Tweet_details](https://user-images.githubusercontent.com/33032158/166555370-4ca646ec-d096-4388-9e49-9ebf6f076a54.JPG)
+
+### Search Tweet
+![Search](https://user-images.githubusercontent.com/33032158/166555427-67190cc2-b6c6-4431-8372-001e93f1db10.JPG)
+
+### User Profile
+![Profile](https://user-images.githubusercontent.com/33032158/166555463-35217c92-89c2-4f85-b589-cfcad1999cf0.JPG)
+
+
